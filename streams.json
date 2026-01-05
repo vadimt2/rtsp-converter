@@ -1,0 +1,22 @@
+{
+  "streams": [
+    {
+      "name": "abbeyroad",
+      "source": "https://www.youtube.com/watch?v=57w2gYXjRic",
+      "enabled": true,
+      "description": "Abbey Road Crossing, London"
+    },
+    {
+      "name": "timessquare",
+      "source": "https://www.youtube.com/watch?v=AdUw5RdyZxI",
+      "enabled": false,
+      "description": "Times Square, New York"
+    },
+    {
+      "name": "shibuya",
+      "source": "https://www.youtube.com/watch?v=gFRtAAmiFbE",
+      "enabled": false,
+      "description": "Shibuya Crossing, Tokyo"
+    }
+  ]
+}

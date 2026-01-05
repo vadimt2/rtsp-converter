@@ -1,0 +1,55 @@
+# MediaMTX configuration for road-ai RTSP server
+
+###############################################
+# General settings
+logLevel: info
+logDestinations: [stdout]
+
+###############################################
+# RTSP server settings
+rtsp: yes
+protocols: [tcp, udp]
+rtspAddress: :8554
+
+###############################################
+# RTMP server settings (optional, for OBS etc)
+rtmp: yes
+rtmpAddress: :1935
+
+###############################################
+# HLS server settings (for web browser playback)
+hls: yes
+hlsAddress: :8888
+hlsAlwaysRemux: no
+hlsSegmentCount: 3
+hlsSegmentDuration: 1s
+
+###############################################
+# WebRTC server settings (low latency web)
+webrtc: yes
+webrtcAddress: :8889
+
+###############################################
+# API for monitoring
+api: yes
+apiAddress: :9997
+
+###############################################
+# Path settings - streams will be auto-created
+paths:
+  all:
+    # Allow publishing from any source
+    publishUser: ""
+    publishPass: ""
+    # Allow reading from any client
+    readUser: ""
+    readPass: ""
+
+  abbeyroad:
+    # Abbey Road specific settings
+    # Source will be pushed by the streamer container
+    sourceOnDemand: no
+
+  # Add more camera paths as needed
+  # timessquare:
+  #   sourceOnDemand: no
