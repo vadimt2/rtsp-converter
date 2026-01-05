@@ -1,0 +1,34 @@
+# Stream Configuration
+# -------------------
+# Define multiple streams using indexed format:
+# STREAM_0_NAME, STREAM_0_SOURCE, STREAM_0_ENABLED, STREAM_0_DESC
+# STREAM_1_NAME, STREAM_1_SOURCE, STREAM_1_ENABLED, STREAM_1_DESC
+# etc.
+
+# Stream 0: Abbey Road
+STREAM_0_NAME=abbeyroad
+STREAM_0_SOURCE=https://www.youtube.com/watch?v=57w2gYXjRic
+STREAM_0_ENABLED=true
+STREAM_0_DESC=Abbey Road Crossing, London
+
+# Stream 1: Times Square (disabled by default)
+# STREAM_1_NAME=timessquare
+# STREAM_1_SOURCE=https://www.youtube.com/watch?v=AdUw5RdyZxI
+# STREAM_1_ENABLED=false
+# STREAM_1_DESC=Times Square, New York
+
+# # Stream 2: Shibuya Crossing (disabled by default)
+# STREAM_2_NAME=shibuya
+# STREAM_2_SOURCE=https://www.youtube.com/watch?v=gFRtAAmiFbE
+# STREAM_2_ENABLED=false
+# STREAM_2_DESC=Shibuya Crossing, Tokyo
+
+# Add more streams by incrementing the index:
+# STREAM_3_NAME=mystream
+# STREAM_3_SOURCE=https://www.youtube.com/watch?v=VIDEO_ID
+# STREAM_3_ENABLED=true
+# STREAM_3_DESC=My Custom Stream
+
+# RTSP server settings
+RTSP_SERVER=mediamtx
+RTSP_PORT=8554
